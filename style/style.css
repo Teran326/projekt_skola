@@ -9,7 +9,7 @@ ul {
 }
 #secondary {
   float: left;
-  position: fixed;
+  position: relative;
   width: 230px;
   height: 100%;
   background-color: #151515;
@@ -64,14 +64,25 @@ li a {
 #i {
 	margin-left: 200px;
 }
-.table-bordered {
-  border: 1px solid #dee2e6;
-}
 .center{
   text-align: center;
 }
 .right {
   text-align: right;
+}
+td:first-child {
+  background: #eaeaea;
+  font-weight: bold;
+}
+td, th {
+  padding: 8px;
+}
+th {
+  background: #eaeaea;
+}
+iframe {
+  margin: 0 auto;
+  display: block;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
