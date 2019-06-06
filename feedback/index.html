@@ -10,140 +10,129 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
-<body>
-    <header class="jumbotron bg-success">
-        <h1 class="text-center text-danger">Feedback</h1>
-    </header>
-    <main>
-        <div id="secondary">
+<body class="lightred">
+    <div class="navbar">
+        <div class="dropdown" style="font-size: 32px; color: white;">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
             <ul>
                 <li>
-                    <a href="../uvod/index.html"><img src="../photo/hlp.png"></a>
+                    <a href="../uvod/index.html">Úvod</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Týmy</button>
-                        <div class="dropdown-content">
-                            <a href="../muzi/index.html">Muži</a>
-                            <a href="../zeny/index.html">Ženy</a>
-                        </div>
-                    </div>
+                    <a href="../muzi/index.html">Muži</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="../poradi_muzi/index.html"><button class="dropbtn">Pořadí - Muži 2018</button></a>
-                    </div>
+                    <a href="../zeny/index.html">Ženy</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="../poradi_zeny/index.html"><button class="dropbtn">Pořadí - Ženy 2018</button></a>
-                    </div>
+                        <a href="../poradi_muzi/index.html">Pořadí - Muži 2018</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="#"><button class="dropbtn">Feedback</button></a>
+                        <a href="../poradi_zeny/index.html">Pořadí - Ženy 2018</a>
+                </li>
+                <li>
+                        <a href="#">Feedback</a>
+                </li>
+                <li>
+                    <div>
+                        <form class="searching" action="action_page.php">
+                            <input type="text" placeholder="Search" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </div>
                 </li>
             </ul>
-        </div>
-        <div class="main">
+        </nav>
+    </div>
+    <header class="heading grey">
+        <h1 class="text-center text-info">Feedback</h1>
+    </header>
+    <main>
+        <div class="container">
             <h2 class="text-center">Pomozte nám zlepšit naši stránku vyplněním tohoto dotazníku.</h2>
             <br>
             <form>
-                <form>
-                    <h3>Odkud jste se na naše stránky dostal?</h3>
-                    <input type="radio" name="something"> Internetové vyhledávání?
-                    <br>
-                    <input type="radio" name="something"> Reklama v televizi?
-                    <br>
-                    <input type="radio" name="something"> Jinak(prosím, uveďte jak)
-                    <input type="text" name="something" value="" placeholder="Napište odpověď">
-                    <br>
-                    <br>
-                    <br>
-                </form>
-                <form>
-                    <h3>Myslíte si, že jsou naše stránky přehledné?</h3>
-                    <input type="radio" name="something"> Ano
-                    <input type="radio" name="something"> Nevím
-                    <input type="radio" name="something"> Ne
-                    <br>
-                    <br>
-                    <br>
-            </form>
-            <form>
-                <h3>Je Vám z obsahu jasné co stránky prezentují?</h3>
-                <input type="radio" name="something"> Ano
-                <input type="radio" name="something"> Nevím
-                <input type="radio" name="something"> Ne
+                <h3>Odkud jste se na naše stránky dostal?</h3>
+                <input type="radio" name="something"> Internetové vyhledávání?
+                <br>
+                <input type="radio" name="something"> Reklama v televizi?
+                <br>
+                <input type="radio" name="something"> Jinak(prosím, uveďte jak)
+                <input type="text" name="something" value="" placeholder="Napište odpověď">
                 <br>
                 <br>
                 <br>
-            </form>
-            <form>
-                <h3>Našli jste v obsahu stránek požadované informace?</h3>
-                <input type="radio" name="something"> Ano
-                <input type="radio" name="something"> Nevím
-                <input type="radio" name="something"> Ne
-                <br>
-                <br>
-                <br>
-            </form>
-            <form>
-                <h3>Je pro Vás orientace v navigaci a procházení obsahu intuitivní?</h3>
-                <input type="radio" name="something"> Ano
-                <input type="radio" name="something"> Nevím
-                <input type="radio" name="something"> Ne
-                <br>
-                <br>
-                <br>
-            </form>
-            <form>
-                <h3>Líbí se Vám grafické zpracování stránky?</h3>
-                <input type="radio" name="something"> Ano
-                <input type="radio" name="something"> Nevím
-                <input type="radio" name="something"> Ne
-                <br>
-                <br>
-                <br>
-            </form>
-            <form>
-                <h3>Vyhovuje Vám velikost a styl písma obsahu webových stránek?</h3>
-                <input type="radio" name="something"> Ano
-                <input type="radio" name="something"> Nevím
-                <input type="radio" name="something"> Ne
-                <br>
-                <br>
-                <br>
-            </form>
-            <form>
                 <h3>Myslíte si, že jsou naše stránky přehledné?</h3>
-                <input type="radio" name="something"> Ano
-                <br>
-                <input type="radio" name="something"> Ne(prosím, uveďte odpověď)
-                <input type="text" name="something" value="" placeholder="Napište odpověď">
-                <br>
+                <input type="radio" name="else"> Ano
+                <input type="radio" name="else"> Nevím
+                <input type="radio" name="else"> Ne
                 <br>
                 <br>
-            </form>
-            <form>
+                <br>
+                <h3>Je Vám z obsahu jasné co stránky prezentují?</h3>
+                <input type="radio" name="if"> Ano
+                <input type="radio" name="if"> Nevím
+                <input type="radio" name="if"> Ne
+                <br>
+                <br>
+                <br>
+                <h3>Našli jste v obsahu stránek požadované informace?</h3>
+                <input type="radio" name="do"> Ano
+                <input type="radio" name="do"> Nevím
+                <input type="radio" name="do"> Ne
+                <br>
+                <br>
+                <br>
+                <h3>Je pro Vás orientace v navigaci a procházení obsahu intuitivní?</h3>
+                <input type="radio" name="while"> Ano
+                <input type="radio" name="while"> Nevím
+                <input type="radio" name="while"> Ne
+                <br>
+                <br>
+                <br>
+                <h3>Líbí se Vám grafické zpracování stránky?</h3>
+                <input type="radio" name="get"> Ano
+                <input type="radio" name="get"> Nevím
+                <input type="radio" name="get"> Ne
+                <br>
+                <br>
+                <br>
+                <h3>Vyhovuje Vám velikost a styl písma obsahu webových stránek?</h3>
+                <input type="radio" name="ddd"> Ano
+                <input type="radio" name="ddd"> Nevím
+                <input type="radio" name="ddd"> Ne
+                <br>
+                <br>
+                <br>
+                <h3>Myslíte si, že jsou naše stránky přehledné?</h3>
+                <input type="radio" name="apt"> Ano
+                <br>
+                <input type="radio" name="apt"> Ne(prosím, uveďte odpověď)
+                <input type="text" name="apt" value="" placeholder="Napište odpověď">
+                <br>
+                <br>
+                <br>
                 <h3>Co byste nám doporučili změnit, doplnit nebo odstranit?</h3>
-                <input type="text" name="something" value="" placeholder="Napište odpověď">
+                <textarea rows="5" class="form-control" placeholder="Napište odpověď"></textarea>
                 <br>
                 <br>
-            </form>
-                <input type="submit" value="Submit">
-                <input type="reset">
+                <div class="text-center">
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </div>
             </form>
         </div>
     </main>
-    <footer>
+    <footer class="black">
         <hr>
-        <p class="text-center">&copy Štěpán Wysoglad - 2019</p>
-        <p id="time" class="text-center"></p>
+        <p class="text-center text-light">&copy; Štěpán Wysoglad - 2019</p>
+        <p id="time" class="text-center text-light"></p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -153,7 +142,15 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../javascripts/time.js"></script>
+    <script>
+        $(function(){ 
+            $('.dropdown').click(function(){
+                $('.navbar ul').toggle(500);
+            }); 
+        })
+    </script>
 </body>
 
 </html>

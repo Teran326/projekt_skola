@@ -1,61 +1,63 @@
-ul {
+.navbar {
+  background-color: #333333;
+}
+.navbar ul {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-
 }
-.jumbotron {
-  margin: 0;
+.navbar .dropdown {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
-#secondary {
-  float: left;
-  position: relative;
-  width: 230px;
-  height: 100%;
-  background-color: #151515;
-}
-li a {
+.navbar ul li a {
   display: block;
-}
-.main {
-	margin-left: 230px;
-}
-.dropbtn {
-  background-color: #151515;
+  padding: 10px;
+  font-weight: bold;
   color: white;
-  padding: 16px;
-  font-size: 30px;
-  border: none;
+  text-decoration: none;
+  border: 1px solid #333333;
+}
+* {
+  box-sizing: border-box;
+}
+
+form.searching input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.searching button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #0f0f0f;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
   cursor: pointer;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
+
+form.searching button:hover {
+  background: #0b7dda;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+form.searching::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.dropdown-content a:hover {
-	background-color: #f1f1f1
-	color: black !important;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: #f9f9f9;
-  color: #151515;
+.main {
+	margin: 10px 0;
 }
 .images {
   padding-top: 5px;
@@ -78,14 +80,33 @@ li a {
   width: 200px;
   height: 200px;
 }
-#i {
-	margin-left: 200px;
-}
 .center{
   text-align: center;
 }
 .right {
   text-align: right;
+}
+.width {
+  width: 25%;
+}
+.frameborder {
+  border: 0;
+}
+.grey {
+  background-color: #ddd;
+}
+.lightred{
+  background-color: #fffffa;
+}
+.black {
+  background-color: #333333;
+}
+.heading {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+}
+#time {
+  margin: 0;
 }
 td:first-child {
   background: #eaeaea;
@@ -100,8 +121,15 @@ th {
 iframe {
   margin: 0 auto;
   display: block;
+  width: 560px;
+  height: 315px;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 450px) {
+  .navbar ul{
+    display: block;
+  }
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
 }

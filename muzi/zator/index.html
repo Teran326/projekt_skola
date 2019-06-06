@@ -10,48 +10,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="../../style/style.css">
 </head>
 
-<body>
-    <header class="jumbotron bg-success">
-        <h1 class="text-center text-danger">SDH Zátor</h1>
-        <h4 class="text-center text-danger"></h4>
-        <img src="../../photo/zator.jpg" class="idk" id="i">
-    </header>
-    <main>
-        <div id="secondary">
+<body class="lightred">
+    <div class="navbar">
+        <div class="dropdown" style="font-size: 32px; color: white;">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
             <ul>
                 <li>
-                    <a href="../../uvod/index.html"><img src="../../photo/hlp.png"></a>
+                    <a href="../../uvod/index.html">Úvod</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Týmy</button>
-                        <div class="dropdown-content">
-                            <a href="../index.html">Muži</a>
-                            <a href="../../zeny/index.html">Ženy</a>
-                        </div>
-                    </div>
+                    <a href="../../muzi/index.html">Muži</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="../../poradi_muzi/index.html"><button class="dropbtn">Pořadí - Muži 2018</button></a>
-                    </div>
+                    <a href="../../zeny/index.html">Ženy</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="../../poradi_zeny/index.html"><button class="dropbtn">Pořadí - Ženy 2018</button></a>
-                    </div>
+                        <a href="../../poradi_muzi/index.html">Pořadí - Muži 2018</a>
                 </li>
                 <li>
-                    <div class="dropdown">
-                        <a href="../../feedback/index.html"><button class="dropbtn">Feedback</button></a>
+                        <a href="../../poradi_zeny/index.html">Pořadí - Ženy 2018</a>
+                </li>
+                <li>
+                        <a href="../../feedback/index.html">Feedback</a>
+                </li>
+                <li>
+                    <div>
+                        <form class="searching" action="action_page.php">
+                            <input type="text" placeholder="Search" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
                     </div>
                 </li>
             </ul>
-        </div>
-        <div class="main">
+        </nav>
+    </div>
+    <header class="heading grey">
+        <h1 class="text-center text-info"><img src="../../photo/zator.jpg" class="idk" id="i"> &nbsp; SDH Zátor</h1>
+    </header>
+    <main>
+        <div class="container">
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -78,13 +81,13 @@
                     </tr>
                 </tfoot>
             </table>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/KG8r7mTIhnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KG8r7mTIhnk" class="frameborder" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
-    <footer>
+    <footer class="black">
         <hr>
-        <p class="text-center">&copy Štěpán Wysoglad - 2019</p>
-        <p id="time" class="text-center"></p>
+        <p class="text-center text-light">&copy; Štěpán Wysoglad - 2019</p>
+        <p id="time" class="text-center text-light"></p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -94,7 +97,15 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
-    <script src="../javascripts/time.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../javascripts/time.js"></script>
+    <script>
+        $(function(){ 
+            $('.dropdown').click(function(){
+                $('.navbar ul').toggle(500);
+            }); 
+        })
+    </script>
 </body>
 
 </html>
