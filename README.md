@@ -1,4 +1,3 @@
-# dodelat zenske tymy
 # dodelat responzivitu
 # zkontrolovat validitu popr upravid kod
 # responzivní form
