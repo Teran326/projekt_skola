@@ -76,6 +76,18 @@ form.searching::after {
     border: 2px solid #222;
     box-shadow: 10px 10px #ccc;
 }
+.facebook {
+  font-size: 32px;
+  padding-top: 10px;
+  float: left;
+  padding-left: 5px;
+}
+.youtube {
+  font-size: 32px;
+  padding-top: 10px;
+  float: right;
+  padding-right: 5px;
+}
 .idk {
   width: 200px;
   height: 200px;
@@ -136,10 +148,14 @@ iframe {
     width: 300px;
     height: 200px;
   }
+
 }
 @media screen and (max-width: 870px) {
   .navbar ul{
     display: block;
+  }
+.youtube {
+    float: left;
   }
 }
 @media screen and (max-width: 950px) {
