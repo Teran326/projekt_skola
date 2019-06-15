@@ -156,6 +156,7 @@ iframe {
   }
 .youtube {
     float: left;
+    display: block;
   }
 }
 @media screen and (max-width: 950px) {
