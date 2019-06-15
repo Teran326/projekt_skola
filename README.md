@@ -1,1 +1,1 @@
-# zkontrolovat validitu popr upravid kod
+
